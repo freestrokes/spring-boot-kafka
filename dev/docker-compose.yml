@@ -1,5 +1,8 @@
 version: "3.9"
 
+# Multi Brokers
+# https://www.sktenterprise.com/bizInsight/blogDetail/dev/2552
+
 services:
   zookeeper-1:
     image: confluentinc/cp-zookeeper:latest
@@ -80,7 +83,8 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
 
-# Marketplace
+# Single Broker
+# https://devocean.sk.com/blog/techBoardDetail.do?ID=164007
 #  zookeeper:
 #    image: wurstmeister/zookeeper
 #    platform: linux/amd64
